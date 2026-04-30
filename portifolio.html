@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Projetos</title>
+
+</head>
+<style>
+  * {
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(218, 218, 218);
+    font-family: Arial, sans-serif;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #2981d4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  nav li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+
+  nav li a:hover {
+    background-color: #2981d4;
+  }
+
+  .meusprojetos p {
+
+    text-align: center;
+
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+
+  main {
+    margin-top: 100px;
+  }
+
+  .linha-divisoria {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+
+    margin: 40px 100px;
+  }
+
+  .lm {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 200px;
+  margin-top: 60px;
+  }
+
+  
+
+  .lm a{
+    color: #138bee;
+    text-decoration: none;
+
+    
+
+    
+  }
+
+  .lm a:visited {
+  color: purple;
+}
+
+.lm a:hover {
+  color: red; }      
+
+
+  .descriLm {
+     padding: 0 200px;
+  margin-top: 10px;
+  color: #138bee;
+  }
+
+  .sustent {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 200px;
+  margin-top: 40px;
+  }
+
+  
+
+  .sustent a{
+    color: #138bee;
+    text-decoration: none;
+
+    
+
+    
+  }
+
+  .sustent a:visited {
+  color: purple;
+}
+
+.sustent a:hover {
+  color: red; }      
+
+
+  .descriSust{
+     padding: 0 200px;
+  margin-top: 10px;
+  color: #138bee;
+  }
+
+.text{
+     
+
+  padding: 0 200px;
+  margin-top: 60px;
+}
+
+.list{
+  padding: 0 200px;
+  margin-top: 20px;
+
+}
+.list{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 200px;
+  margin-top: 60px;
+}
+
+.white{
+   background-color: rgb(255, 255, 255);
+
+  margin-top: 10%;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 70px;
+
+  border-radius: 12px;
+
+  min-height: calc(100vh - 140px);
+
+  padding-top: 40px; }
+
+   .btn-dark {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+
+  font-size: 22px;
+  padding: 12px;
+
+  background-color: black;
+  color: white;
+
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+  transition: 0.3s;
+}
+
+.btn-dark:hover {
+  transform: scale(1.1);
+}
+
+.dark {
+   color: white;
+      background-color: #24284b;
+  
+}
+
+.dark nav ul {
+  background-color: #0d1668;
+}
+
+.dark .btn-dark {
+  background-color: rgb(98, 163, 216);
+  color: black;
+  
+  background-color: #1e1e1e;
+}
+  
+.dark .white {
+  background-color: #254f85;
+}
+
+.dark .white h1 {
+  color: white;
+}
+
+
+.dark .perfil-container h2 {
+  color: white;
+}
+
+.dark .white h2 {
+  color: white;
+}
+
+.dark .white p {
+  color: white;
+}
+
+.dark .white span {
+  color: white;
+}
+
+.dark .text h3{
+  color: white;
+}
+
+.dark .list li{
+  color: white;
+}
+
+
+</style>
+
+<body>
+  <link rel="stylesheet" href="style.css">
+
+  <nav>
+    <ul>
+      <li><a href="main.html">Sobre Mim</a></li>
+      <li><a href="portifolio.html">Portifólio</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main class="white">
+     <button onclick="toggleDark()" class="btn-dark">🌙</button>
+    <div class="meusprojetos">
+
+      <h1 class="portiwhite">Meu portifólio</h1>
+
+
+    </div>
+
+    <div class="lm">
+      <h2>Projeto L&M</h2>
+        
+        <a href="https://gryphostudio.github.io">https://gryphostudio.github.io</a>
+    </div>
+    <div class="descriLm">
+      <p>O projeto L&M teve o objetivo principal de servir como um serviço </p>
+      <p>para venda de doces e salgadinhos. Por mais que seja desenvolvido para o formato</p>
+      <p>mobile, como a línguagem usada foi o dart, é acessível também na web.</p>
+      <p> É conectado a um banco de dados, o que torna o programa funcional e acessível</p>
+      <p>em qualquer dispositivo.</p>
+
+    </div>
+    <hr class="linha-divisoria">
+
+    <div class="sustent">
+      <h2>Projeto Sustentabilidade</h2>
+
+      <a href="https://leobcarbonal15.github.io/sustentabilidade/">https://leobcarbonal15.github.io/sustentabilidade/</a>
+    </div>
+    <div class="descriSust">
+      <p>O projeto Sustentabilidade foi desenvolvido anos atrás com o objetivo de conscientizar sobre </p>
+      <p>o lixo e os recursos naturais no município de Tijucas do Sul-PR. Surgiu como uma atividade </p>
+      <p>extensionista do Novo Ensino Médio no ano de 2022.</p>
+    </div>
+
+    <hr class="linha-divisoria">
+
+    <div class="text">
+      <h3>Além dos projetos apresentados nessa seção, também trabalho com:</h3>
+   
+      </div>
+
+      <div class="list">
+
+      <li>Flutter-Dart</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Banco de dados NOSQL</li>
+
+       
+
+
+    </div>
+
+  
+
+  </main>
+<script>
+function toggleDark() {
+  document.body.classList.toggle("dark");
+
+  const btn = document.querySelector(".btn-dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("tema", "dark");
+    btn.textContent = "☀️";
+  } else {
+    localStorage.setItem("tema", "light");
+    btn.textContent = "🌙";
+  }
+}
+
+// ao carregar a página
+window.onload = () => {
+  const temaSalvo = localStorage.getItem("tema");
+
+  if (temaSalvo === "dark") {
+    document.body.classList.add("dark");
+    document.querySelector(".btn-dark").textContent = "☀️";
+  }
+};
+</script>
+
+</body>
+
+</html>
