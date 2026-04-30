@@ -66,10 +66,12 @@
   .lm {
     display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
-  padding: 0 200px;
-  margin-top: 60px;
+  padding: 0 20px;
+  margin-top: 40px;
+
+  gap: 10px;
   }
 
   
@@ -92,7 +94,7 @@
 
 
   .descriLm {
-     padding: 0 200px;
+      padding: 0 20px;
   margin-top: 10px;
   color: #138bee;
   }
@@ -100,10 +102,12 @@
   .sustent {
     display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
-  padding: 0 200px;
+  padding: 0 20px;
   margin-top: 40px;
+
+  gap: 10px;
   }
 
   
@@ -126,46 +130,44 @@
 
 
   .descriSust{
-     padding: 0 200px;
+    padding: 0 20px;
   margin-top: 10px;
   color: #138bee;
   }
 
-.text{
-     
-
-  padding: 0 200px;
+.text {
+  padding: 0 20px;
   margin-top: 60px;
 }
 
-.list{
-  padding: 0 200px;
+.list {
+  padding: 0 20px;
   margin-top: 20px;
 
-}
-.list{
-   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0 200px;
-  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.white{
-   background-color: rgb(255, 255, 255);
+.list li {
+  list-style: none;
+  background: #e0e0e0;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
 
-  margin-top: 10%;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 70px;
+.white {
+  background-color: white;
+
+  width: 90%;
+  max-width: 1100px;
+  margin: 100px auto;
 
   border-radius: 12px;
+  padding: 30px 20px;
 
   min-height: calc(100vh - 140px);
-
-  padding-top: 40px; }
-
+}
    .btn-dark {
   position: fixed;
   top: 15px;
@@ -240,6 +242,32 @@
   color: white;
 }
 
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .lm, .sustent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .lm a, .sustent a {
+    word-break: break-all;
+  }
+
+  .linha-divisoria {
+    margin: 30px 20px;
+  }
+
+  .list {
+    justify-content: center;
+  }
+
+}
+
 
 </style>
 
@@ -297,7 +325,7 @@
    
       </div>
 
-      <div class="list">
+      <ul class="list">
 
       <li>Flutter-Dart</li>
       <li>HTML</li>
@@ -306,7 +334,7 @@
       <li>Banco de dados NOSQL</li>
 
        
-
+      </ul>
 
     </div>
 
