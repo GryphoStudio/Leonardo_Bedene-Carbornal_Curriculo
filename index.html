@@ -10,7 +10,7 @@
    body {
   color: black;
 }
-
+ /* Cor de fundo*/
     body {
       background-color: rgb(218, 218, 218);
       font-family: Arial, sans-serif;
@@ -134,6 +134,8 @@
 .linha-divisoria {
   margin: 40px 20px;
 }
+
+/*Botão do modo escuro*/
   .btn-dark {
   position: fixed;
   top: 15px;
@@ -193,7 +195,7 @@
   nav ul {
     flex-direction: column;
   }
-
+  /*Foto e nome*/
   .perfil-container {
     flex-direction: column;
     text-align: center;
@@ -203,13 +205,13 @@
     width: 150px;
     height: 150px;
   }
-
+  /*Descrição*/
   .sobremim {
     width: 90%;
     margin: 20px auto;
     font-size: 16px;
   }
-
+  /*Botões de navegação secundários*/
   .botoes {
     flex-direction: column;
     align-items: center;
@@ -234,7 +236,7 @@
 
 
 <body>
-
+  
   <nav id="navbar">
     <ul>
       <li><a href="index.html">Sobre Mim</a></li>
@@ -287,8 +289,9 @@
     </div>
 
   </main>
-
+ 
 <script>
+  //JavaScript do modo escuro
 function toggleDark() {
   document.body.classList.toggle("dark");
 
@@ -303,7 +306,7 @@ function toggleDark() {
   }
 }
 
-// ao carregar a página
+
 window.onload = () => {
   const temaSalvo = localStorage.getItem("tema");
 
@@ -312,7 +315,7 @@ window.onload = () => {
     document.querySelector(".btn-dark").textContent = "☀️";
   }
 };
-
+  //Barra de navegação sobe ao roLar a tela
 let lastScroll = 0;
 const navbar = document.getElementById("navbar");
 
@@ -320,10 +323,10 @@ window.addEventListener("scroll", () => {
   let currentScroll = window.pageYOffset;
 
   if (currentScroll > lastScroll) {
-    // descendo → esconde
+    
     navbar.style.top = "-70px";
   } else {
-    // subindo → aparece
+    
     navbar.style.top = "0";
   }
 
